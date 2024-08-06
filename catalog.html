@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - Anime World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Anime Catalog</h1>
+    </header>
+    <main>
+        <section class="catalog">
+            <h2>Our Collection</h2>
+            <div class="card">
+                <img src="https://vignette.wikia.nocookie.net/mangakaart/images/5/57/Bleach_Manga_-_506_-_Large_01.jpg/revision/latest?cb=20130526202529&path-prefix=es" alt="Anime 1">
+                <h3>Bleach</h3>
+                <p>Short description of Bleach.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.G7IzYiVmPlWVvOxi_xMWPQHaEo?rs=1&pid=ImgDetMain" alt="Anime 2">
+                <h3>Death Note</h3>
+                <p>Short description of Death Note .</p>
+                <a href="#">Read More</a>
+            </div>
+            <!-- Add more anime entries as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Anime World. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "3bb8a1e6-769e-4994-a9db-a3e114fa35d6", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "c011e12e-e00c-40e7-a2c0-37487f6a622e", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Anime World</h1>
+        <p>Discover and explore the best anime series and characters!</p>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="https://wallpapercave.com/wp/wp9121467.png" alt="Anime Hero">
+            <h2>Welcome to Anime World</h2>
+            <p>Your ultimate destination for all things anime.</p>
+        </section>
+        <section class="featured-anime">
+            <h2>Featured Anime</h2>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.LSoVYmP90bNRAjMYiwc11wHaFj?w=266&h=200&c=7&o=5&dpr=1.3&pid=1.7" alt="Anime 1">
+                <h3>One Piece</h3>
+                <p>Explore the world of One Piece, known for its incredible storytelling and animation.</p>
+            </div>
+            <div class="card">
+                <img src="https://a-static.besthdwallpaper.com/anime-naruto-and-sasuke-in-black-and-white-wallpaper-3840x2400-105681_9.jpg" alt="Anime 2">
+                <h3>Naruto</h3>
+                <p>Delve into the captivating story of Naruto with unique characters and plot twists.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/1d/5f/ff/1d5fff0bac16121cff8415f9d1697dc0.jpg" alt="Anime 3">
+                <h3>Jujutsu kaisen</h3>
+                <p>Experience the thrilling adventures of Jujutsu kaisen, a fan favorite.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Anime World. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "3bb8a1e6-769e-4994-a9db-a3e114fa35d6", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "c011e12e-e00c-40e7-a2c0-37487f6a622e", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>

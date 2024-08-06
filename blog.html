@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Anime World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Blog</h1>
+    </header>
+    <main>
+        <section class="blog">
+            <h2>Latest Articles</h2>
+            <div class="blog-post">
+                <img src="https://i.pinimg.com/originals/73/d9/f3/73d9f33d087b8a5a7ae66ffd4aa4e00b.jpg" alt="Blog Post 1">
+                <h3>Dragon Ball</h3>
+                <p>Summary of the article...</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="https://th.bing.com/th/id/R.4218f4cb45baaa2c31cd38ac8dc6dd9c?rik=01YAX9eopNW6tA&riu=http%3a%2f%2fpm1.narvii.com%2f7576%2f205d2d331e0a850ff999996a17859885735a5097r1-2048-1365v2_uhq.jpg&ehk=nbKf3k5nTvO6s3N52uLyQH%2fCefo%2b5K0rQz5%2fLL31%2f84%3d&risl=&pid=ImgRaw&r=0" alt="Blog Post 2">
+                <h3>Hell's Paradise</h3>
+                <p>Summary of the article...</p>
+                <a href="#">Read More</a>
+            </div>
+            <!-- Add more blog posts as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Anime World. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "3bb8a1e6-769e-4994-a9db-a3e114fa35d6", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "c011e12e-e00c-40e7-a2c0-37487f6a622e", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
